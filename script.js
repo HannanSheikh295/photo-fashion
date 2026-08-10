@@ -189,15 +189,33 @@
     document.body.style.overflow = "hidden";
   }
 
+  let lightboxLoadToken = 0;
+
   function renderLightbox() {
     const item = currentGroup[currentIndex];
     if (!item) return;
     const img = item.querySelector("img");
     const tag = item.querySelector(".g-tag")?.textContent ?? "";
     const cap = item.querySelector(".g-cap")?.textContent ?? "";
-    lightboxImg.src = img.src;
+    const fullSrc = img.getAttribute("src");
+    const smallSrc = fullSrc.replace(/(\.[a-z]+)$/i, "-sm$1");
+    const token = ++lightboxLoadToken;
+
+    // Show the already-light thumbnail immediately so the correct image
+    // appears at once instead of the previous one lingering while the
+    // full-res file loads, then swap up to full quality once it's ready.
+    lightboxImg.classList.add("is-loading");
+    lightboxImg.src = smallSrc;
     lightboxImg.alt = img.alt;
     lightboxCap.textContent = `${tag} — ${cap}`;
+
+    const fullImg = new Image();
+    fullImg.onload = () => {
+      if (token !== lightboxLoadToken) return;
+      lightboxImg.src = fullSrc;
+      lightboxImg.classList.remove("is-loading");
+    };
+    fullImg.src = fullSrc;
   }
 
   function closeLightbox() {
@@ -230,7 +248,6 @@
   function expandAccordionPanel(trigger) {
     const item = trigger.closest(".accordion-item");
     const panel = trigger.nextElementSibling;
-    const icon = trigger.querySelector(".accordion-icon");
 
     trigger.setAttribute("aria-expanded", "true");
     item.classList.add("is-open");
@@ -245,7 +262,6 @@
           { opacity: 1, y: 0, duration: 0.45, delay: 0.15, ease: "power2.out" }
         );
       }
-      if (icon) gsap.fromTo(icon, { rotate: 0 }, { rotate: 90, duration: 0.55, ease: "back.out(2.6)" });
     } else {
       panel.style.height = panel.scrollHeight + "px";
     }
@@ -254,14 +270,12 @@
   function collapseAccordionPanel(trigger) {
     const item = trigger.closest(".accordion-item");
     const panel = trigger.nextElementSibling;
-    const icon = trigger.querySelector(".accordion-icon");
 
     trigger.setAttribute("aria-expanded", "false");
     item.classList.remove("is-open");
 
     if (hasGSAP && !reduceMotion) {
       gsap.to(panel, { height: 0, duration: 0.4, ease: "power3.in" });
-      if (icon) gsap.to(icon, { rotate: 0, duration: 0.35, ease: "power2.inOut" });
     } else {
       panel.style.height = "0px";
     }
