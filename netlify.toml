@@ -1,0 +1,38 @@
+########################################################################
+# Netlify configuration for the Lumière AI static site.
+#
+# How to deploy:
+#   1. Push this "site" folder to a Git repo (GitHub/GitLab/Bitbucket),
+#      OR drag-and-drop this "site" folder onto https://app.netlify.com/drop
+#   2. If connecting a repo: in the Netlify UI, set "Base directory" to the
+#      folder that contains this file (e.g. "site" if the repo root is the
+#      parent folder). Build command: leave empty. Publish directory: "."
+#   3. No environment variables or build step are required — this is a
+#      plain static site (no framework, no bundler).
+#
+# Netlify Forms (see index.html's #sampleForm):
+#   The form already carries data-netlify="true", a name attribute, and a
+#   hidden form-name field, which is all Netlify needs to auto-detect it at
+#   deploy time by scanning this repo's HTML. No extra setup is required —
+#   once deployed, submissions will appear under Site settings > Forms in
+#   the Netlify dashboard. You can add an email notification there
+#   (Forms > Settings and usage > Form notifications) to get emailed on
+#   every new submission.
+########################################################################
+
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+# Cache images aggressively — filenames don't change without also changing
+# content, so long-lived caching is safe and speeds up repeat visits.
+[[headers]]
+  for = "/assets/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
