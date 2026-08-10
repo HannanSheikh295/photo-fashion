@@ -1,0 +1,39 @@
+# Lumière AI — robots.txt
+# Allow all search engine and AI/LLM crawlers by default.
+
+User-agent: *
+Allow: /
+
+# Common AI/LLM crawlers — explicitly allowed so this site can be
+# discovered and cited by AI answer engines, not just search engines.
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+Sitemap: https://www.lumiereai.com/sitemap.xml
