@@ -36,4 +36,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://www.lumiereai.com/sitemap.xml
+Sitemap: https://lumeire-ai-fashion-photoshoot.netlify.app/sitemap.xml
