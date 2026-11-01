@@ -1,4 +1,4 @@
-# Lumière AI — robots.txt
+# Warpframe AI — robots.txt
 # Allow all search engine and AI/LLM crawlers by default.
 
 User-agent: *
@@ -36,4 +36,4 @@ Allow: /
 User-agent: Bytespider
 Allow: /
 
-Sitemap: https://lumeire-ai-fashion-photoshoot.netlify.app/sitemap.xml
+Sitemap: https://warpframe-ecommerce-photoshoot.netlify.app/sitemap.xml
