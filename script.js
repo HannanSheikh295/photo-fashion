@@ -94,6 +94,7 @@
     }
 
     buildLoop("heroSlotFull", 0);
+    buildLoop("heroSlotMobile", 0);
   })();
 
   /* ---------------- Scroll reveal (GSAP + ScrollTrigger) ---------------- */
@@ -150,11 +151,80 @@
   const gItems = document.querySelectorAll(".g-item");
   const catGroups = document.querySelectorAll(".cat-group");
 
+  /* "Show more" pager: only a first batch of images is visible so phone users don't
+     have to scroll the whole gallery to reach pricing and the FAQ. In the "All" tab the
+     batch is taken from every category (so it's a mix, not just Editorial). */
+  const masonry = document.getElementById("masonry");
+  const galleryMore = document.getElementById("galleryMore");
+  const galleryMoreBtn = document.getElementById("galleryMoreBtn");
+  let activeFilter = "all";
+  let pages = 1;
+
+  function galleryCols() {
+    if (window.matchMedia("(min-width: 1024px)").matches) return 3;
+    if (window.matchMedia("(min-width: 640px)").matches) return 2;
+    return 1;
+  }
+
+  function applyGalleryLimit() {
+    const cols = galleryCols();
+    let remaining = false;
+
+    if (activeFilter === "all") {
+      // per category: desktop 3 (one row), tablet 4 (two rows), phone 2  ->  12 / 16 / 8 images
+      const limit = (cols === 3 ? 3 : cols === 2 ? 4 : 2) * pages;
+      // One flat grid, ordered round-robin across categories (editorial 1, lifestyle 1, studio 1,
+      // minimalist 1, editorial 2 ...). Each "Show more" batch therefore comes after every image
+      // already on screen, so new images always appear at the bottom.
+      masonry?.classList.add("is-flat");
+      catGroups.forEach((group, g) => {
+        group.querySelectorAll(".g-item").forEach((item, i) => {
+          item.style.order = String(i * catGroups.length + g);
+          const collapse = i >= limit;
+          item.classList.toggle("is-collapsed", collapse);
+          if (collapse) remaining = true;
+        });
+      });
+    } else {
+      masonry?.classList.remove("is-flat");
+      gItems.forEach((item) => (item.style.order = ""));
+      // single category: desktop 9, tablet 8, phone 6
+      const limit = (cols === 3 ? 9 : cols === 2 ? 8 : 6) * pages;
+      let n = 0;
+      gItems.forEach((item) => {
+        if (item.dataset.cat !== activeFilter) {
+          item.classList.remove("is-collapsed");
+          return;
+        }
+        const collapse = n >= limit;
+        item.classList.toggle("is-collapsed", collapse);
+        if (collapse) remaining = true;
+        n++;
+      });
+    }
+
+    if (galleryMore) galleryMore.hidden = !remaining;
+    if (hasScrollTrigger) ScrollTrigger.refresh();
+  }
+
+  galleryMoreBtn?.addEventListener("click", () => {
+    pages += 1;
+    applyGalleryLimit();
+  });
+
+  let galleryResizeTimer;
+  window.addEventListener("resize", () => {
+    clearTimeout(galleryResizeTimer);
+    galleryResizeTimer = setTimeout(applyGalleryLimit, 150);
+  });
+
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       filterBtns.forEach((b) => b.classList.remove("is-active"));
       btn.classList.add("is-active");
       const filter = btn.dataset.filter;
+      activeFilter = filter;
+      pages = 1;
 
       gItems.forEach((item) => {
         const match = filter === "all" || item.dataset.cat === filter;
@@ -166,9 +236,11 @@
         group.classList.toggle("is-hidden", !match);
       });
 
-      if (hasScrollTrigger) ScrollTrigger.refresh();
+      applyGalleryLimit();
     });
   });
+
+  applyGalleryLimit();
 
   /* ---------------- Lightbox ---------------- */
   const lightbox = document.getElementById("lightbox");
@@ -182,7 +254,10 @@
   let currentIndex = 0;
 
   function visibleItems() {
-    return Array.from(gItems).filter((el) => !el.classList.contains("is-hidden"));
+    const list = Array.from(gItems).filter((el) => !el.classList.contains("is-hidden") && !el.classList.contains("is-collapsed"));
+    // In the flattened "All" grid, step through images in the order they appear on screen
+    if (masonry?.classList.contains("is-flat")) list.sort((a, b) => Number(a.style.order) - Number(b.style.order));
+    return list;
   }
 
   function openLightbox(item) {

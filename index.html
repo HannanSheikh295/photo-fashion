@@ -40,7 +40,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
 <!-- Preload the largest above-the-fold image (LCP) so the browser fetches it immediately -->
-<link rel="preload" as="image" href="assets/images/hero-1.jpg" imagesrcset="assets/images/hero-1-sm.jpg 900w, assets/images/hero-1.jpg 1920w" imagesizes="100vw" fetchpriority="high" />
+<link rel="preload" media="(min-width: 761px)" as="image" href="assets/images/hero-1.jpg" imagesrcset="assets/images/hero-1-sm.jpg 900w, assets/images/hero-1.jpg 1920w" imagesizes="100vw" fetchpriority="high" />
+<link rel="preload" as="image" media="(max-width: 760px)" href="assets/images/hero-mobile-woman-winking-holding-skincare-bottle-blue-backdrop.jpg" imagesrcset="assets/images/hero-mobile-woman-winking-holding-skincare-bottle-blue-backdrop-sm.jpg 640w, assets/images/hero-mobile-woman-winking-holding-skincare-bottle-blue-backdrop.jpg 940w" imagesizes="100vw" fetchpriority="high" />
 
 <link rel="stylesheet" href="styles.css" />
 
@@ -867,7 +868,7 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero" id="top">
-  <div class="hero-bg hero-bg-single" id="heroSlotFull">
+  <div class="hero-bg hero-bg-single hero-bg-desktop" id="heroSlotFull">
     <div class="hero-slide is-active"><img src="assets/images/hero-1.jpg" srcset="assets/images/hero-1-sm.jpg 900w, assets/images/hero-1.jpg 1920w" sizes="100vw" alt="AI-generated fashion campaign, architectural rooftop" loading="eager" decoding="async" fetchpriority="high" /></div>
     <div class="hero-slide"><img src="assets/images/hero-woman-winking-holding-skincare-bottle-blue-backdrop.jpg" srcset="assets/images/hero-woman-winking-holding-skincare-bottle-blue-backdrop-sm.jpg 900w, assets/images/hero-woman-winking-holding-skincare-bottle-blue-backdrop.jpg 1920w" sizes="100vw" alt="AI product photo, smiling woman holding a skincare bottle above her head on a blue backdrop" loading="lazy" decoding="async" /></div>
     <div class="hero-slide"><img src="assets/images/hero-woman-pink-headscarf-holding-toner-bottle-pink-backdrop.jpg" srcset="assets/images/hero-woman-pink-headscarf-holding-toner-bottle-pink-backdrop-sm.jpg 900w, assets/images/hero-woman-pink-headscarf-holding-toner-bottle-pink-backdrop.jpg 1920w" sizes="100vw" alt="AI beauty product photo, woman in a pink headscarf holding a toner bottle against a pink backdrop" loading="lazy" decoding="async" /></div>
@@ -896,13 +897,32 @@
     <div class="hero-slide"><img src="assets/images/hero-snack-pouches-flat-lay-diagonal-colour-stripes.jpg" srcset="assets/images/hero-snack-pouches-flat-lay-diagonal-colour-stripes-sm.jpg 900w, assets/images/hero-snack-pouches-flat-lay-diagonal-colour-stripes.jpg 1920w" sizes="100vw" alt="AI packaging photography, snack pouches in a diagonal flat-lay on colour-blocked stripes" loading="lazy" decoding="async" /></div>
     <span class="corner-frame is-visible" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
   </div>
+  <!-- Mobile hero: separate 9:16 portrait slideshow (phones, 760px and below). Desktop uses the 16:9 set above. -->
+  <div class="hero-bg hero-bg-single hero-bg-mobile" id="heroSlotMobile">
+    <div class="hero-slide is-active"><img src="assets/images/hero-mobile-woman-winking-holding-skincare-bottle-blue-backdrop.jpg" srcset="assets/images/hero-mobile-woman-winking-holding-skincare-bottle-blue-backdrop-sm.jpg 640w, assets/images/hero-mobile-woman-winking-holding-skincare-bottle-blue-backdrop.jpg 940w" sizes="100vw" alt="AI product photo, smiling woman holding a skincare bottle above her head on a blue backdrop" width="940" height="1672" loading="eager" decoding="async" fetchpriority="high" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-woman-red-fleece-jacket-holding-red-soda-can-crimson-backdrop.jpg" srcset="assets/images/hero-mobile-woman-red-fleece-jacket-holding-red-soda-can-crimson-backdrop-sm.jpg 640w, assets/images/hero-mobile-woman-red-fleece-jacket-holding-red-soda-can-crimson-backdrop.jpg 941w" sizes="100vw" alt="AI lifestyle product photo, woman in a red fleece jacket holding a red soda can on a crimson backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-woman-pink-headscarf-holding-toner-bottle-pink-backdrop.jpg" srcset="assets/images/hero-mobile-woman-pink-headscarf-holding-toner-bottle-pink-backdrop-sm.jpg 640w, assets/images/hero-mobile-woman-pink-headscarf-holding-toner-bottle-pink-backdrop.jpg 941w" sizes="100vw" alt="AI beauty product photo, woman in a pink headscarf holding a toner bottle against a pink backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-woman-applying-face-serum-dropper-palm-leaves.jpg" srcset="assets/images/hero-mobile-woman-applying-face-serum-dropper-palm-leaves-sm.jpg 640w, assets/images/hero-mobile-woman-applying-face-serum-dropper-palm-leaves.jpg 941w" sizes="100vw" alt="AI skincare campaign, woman applying face serum with a dropper among palm leaves" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-rugged-bluetooth-speaker-rock-blue-grey-backdrop.jpg" srcset="assets/images/hero-mobile-rugged-bluetooth-speaker-rock-blue-grey-backdrop-sm.jpg 640w, assets/images/hero-mobile-rugged-bluetooth-speaker-rock-blue-grey-backdrop.jpg 941w" sizes="100vw" alt="AI product photography, rugged Bluetooth speaker on dark rock against a blue-grey backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-purple-perfume-bottle-weathered-driftwood-moody-light.jpg" srcset="assets/images/hero-mobile-purple-perfume-bottle-weathered-driftwood-moody-light-sm.jpg 640w, assets/images/hero-mobile-purple-perfume-bottle-weathered-driftwood-moody-light.jpg 941w" sizes="100vw" alt="AI perfume photography, purple perfume bottle on weathered driftwood in moody light" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-protein-bar-chocolate-drizzle-peanuts-tan-backdrop.jpg" srcset="assets/images/hero-mobile-protein-bar-chocolate-drizzle-peanuts-tan-backdrop-sm.jpg 640w, assets/images/hero-mobile-protein-bar-chocolate-drizzle-peanuts-tan-backdrop.jpg 941w" sizes="100vw" alt="AI food photography, protein bar with chocolate drizzle over peanuts on a tan backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-potato-chips-pouring-from-bag-into-bowl-tan-backdrop.jpg" srcset="assets/images/hero-mobile-potato-chips-pouring-from-bag-into-bowl-tan-backdrop-sm.jpg 640w, assets/images/hero-mobile-potato-chips-pouring-from-bag-into-bowl-tan-backdrop.jpg 941w" sizes="100vw" alt="AI food photography, potato chips pouring from a bag into a white bowl on a tan backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-perfume-bottle-wrapped-rope-warm-beige-light.jpg" srcset="assets/images/hero-mobile-perfume-bottle-wrapped-rope-warm-beige-light-sm.jpg 640w, assets/images/hero-mobile-perfume-bottle-wrapped-rope-warm-beige-light.jpg 941w" sizes="100vw" alt="AI perfume photography, glass perfume bottle wrapped in rope in warm beige light" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-amber-perfume-bottle-charred-wood-spices-maroon-backdrop.jpg" srcset="assets/images/hero-mobile-amber-perfume-bottle-charred-wood-spices-maroon-backdrop-sm.jpg 640w, assets/images/hero-mobile-amber-perfume-bottle-charred-wood-spices-maroon-backdrop.jpg 941w" sizes="100vw" alt="AI perfume photography, amber fragrance bottle with charred wood and spices on a maroon backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-matcha-cake-slice-gold-fork-green-backdrop.jpg" srcset="assets/images/hero-mobile-matcha-cake-slice-gold-fork-green-backdrop-sm.jpg 640w, assets/images/hero-mobile-matcha-cake-slice-gold-fork-green-backdrop.jpg 941w" sizes="100vw" alt="AI food photography, matcha cake slice on a gold fork against a green backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-green-smartphone-floating-stones-driftwood-dark-backdrop.jpg" srcset="assets/images/hero-mobile-green-smartphone-floating-stones-driftwood-dark-backdrop-sm.jpg 640w, assets/images/hero-mobile-green-smartphone-floating-stones-driftwood-dark-backdrop.jpg 941w" sizes="100vw" alt="AI tech product photography, green smartphone floating among stones and driftwood on a dark backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-green-perfume-bottle-mossy-rocks-stream.jpg" srcset="assets/images/hero-mobile-green-perfume-bottle-mossy-rocks-stream-sm.jpg 640w, assets/images/hero-mobile-green-perfume-bottle-mossy-rocks-stream.jpg 941w" sizes="100vw" alt="AI perfume photography, green perfume bottle on mossy rocks beside a stream" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-granola-bars-wooden-board-nuts-chocolate-dark-flat-lay.jpg" srcset="assets/images/hero-mobile-granola-bars-wooden-board-nuts-chocolate-dark-flat-lay-sm.jpg 640w, assets/images/hero-mobile-granola-bars-wooden-board-nuts-chocolate-dark-flat-lay.jpg 941w" sizes="100vw" alt="AI food photography, granola bars on a wooden board with nuts and chocolate in a dark flat-lay" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <div class="hero-slide"><img src="assets/images/hero-mobile-gold-steel-luxury-watch-driftwood-peach-backdrop.jpg" srcset="assets/images/hero-mobile-gold-steel-luxury-watch-driftwood-peach-backdrop-sm.jpg 640w, assets/images/hero-mobile-gold-steel-luxury-watch-driftwood-peach-backdrop.jpg 941w" sizes="100vw" alt="AI luxury watch photography, gold and steel wristwatch resting on driftwood against a peach backdrop" width="941" height="1672" loading="lazy" decoding="async" /></div>
+    <span class="corner-frame is-visible" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </div>
   <div class="hero-scrim"></div>
 
   <div class="hero-content">
     <span class="eyebrow fade-up" style="--d:0">For Apparel &amp; E-commerce Brands</span>
     <h1 class="fade-up" style="--d:1">
       <span class="line">Studio-Quality AI</span>
-      <span class="line accent">Product Photoshoots</span>
+      <span class="line accent">Product Photography</span>
       <span class="line">for Every Brand</span>
     </h1>
     <p class="hero-sub fade-up" style="--d:2">
@@ -1092,6 +1112,10 @@
         <button class="g-item" data-cat="minimalist"><img src="assets/images/minimalist-pineapple-soda-can-pink-flat-lay.jpg" srcset="assets/images/minimalist-pineapple-soda-can-pink-flat-lay-sm.jpg 640w, assets/images/minimalist-pineapple-soda-can-pink-flat-lay.jpg 768w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Minimalist AI flat-lay product photo, soda can with pineapple pieces on a soft pink backdrop" width="1400" height="1867" loading="lazy" decoding="async" /><span class="corner-frame"><i></i><i></i><i></i><i></i></span><span class="g-tag">Minimalist</span><span class="g-cap">Soda can, pineapple flat-lay</span></button>
         <button class="g-item" data-cat="minimalist"><img src="assets/images/minimalist-perfume-bottle-white-silk-fabric.jpg" srcset="assets/images/minimalist-perfume-bottle-white-silk-fabric-sm.jpg 640w, assets/images/minimalist-perfume-bottle-white-silk-fabric.jpg 768w" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" alt="Minimalist AI product photo, perfume bottle resting on white satin fabric" width="1400" height="1867" loading="lazy" decoding="async" /><span class="corner-frame"><i></i><i></i><i></i><i></i></span><span class="g-tag">Minimalist</span><span class="g-cap">Perfume on white silk</span></button>
       </div>
+    </div>
+
+    <div class="gallery-more" id="galleryMore" hidden>
+      <button type="button" class="btn btn-secondary btn-lg" id="galleryMoreBtn">Show more</button>
     </div>
   </div>
 

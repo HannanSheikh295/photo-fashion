@@ -279,6 +279,13 @@ body {
 }
 .hero-bg { position: absolute; inset: 0; display: grid; grid-template-columns: 1fr 1fr; }
 .hero-bg-single { display: block; overflow: hidden; }
+/* Desktop shows the 16:9 slideshow; phones show the separate 9:16 portrait slideshow */
+.hero-bg-single.hero-bg-mobile { display: none; }
+@media (max-width: 760px) {
+  .hero-bg-single.hero-bg-desktop { display: none; }
+  .hero-bg-single.hero-bg-mobile { display: block; }
+  .hero-bg-mobile .hero-slide img { object-position: center; }
+}
 .hero-slot { position: relative; overflow: hidden; }
 .hero-slide {
   position: absolute;
@@ -502,6 +509,16 @@ body {
   transition: opacity 0.4s var(--ease), transform 0.4s var(--ease);
 }
 .g-item.is-hidden { display: none; }
+/* Collapsed by the "Show more" pager in script.js (separate from the category filter's .is-hidden) */
+.g-item.is-collapsed { display: none; }
+/* "All" tab: the four category grids are flattened into ONE grid (script.js sets each item's
+   order), so images revealed by "Show more" always land at the bottom, below the existing ones. */
+.masonry.is-flat { display: grid; grid-template-columns: 1fr; gap: 20px; }
+.masonry.is-flat .cat-group { display: contents; }
+@media (min-width: 640px) { .masonry.is-flat { grid-template-columns: repeat(2, 1fr); } }
+@media (min-width: 1024px) { .masonry.is-flat { grid-template-columns: repeat(3, 1fr); } }
+.gallery-more { margin-top: 44px; text-align: center; }
+.gallery-more[hidden] { display: none; }
 .g-item img { width: 100%; height: 100%; object-fit: cover; object-position: top; transition: transform 0.7s var(--ease); }
 .g-item:hover img { transform: scale(1.06); }
 .g-item::after {
