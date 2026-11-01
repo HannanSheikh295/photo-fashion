@@ -1,9 +1,388 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://warpframe-ecommerce-photoshoot.netlify.app/</loc>
-    <lastmod>2026-08-11</lastmod>
+    <lastmod>2026-11-01</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-02.jpg</image:loc>
+      <image:title>Monochrome studio portrait</image:title>
+      <image:caption>Editorial AI fashion campaign, monochrome studio</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-perfume-ice-cube-cherries-lavender-backdrop.jpg</image:loc>
+      <image:title>Perfume on ice, cherry concept</image:title>
+      <image:caption>AI product photography, blue perfume bottle balanced on an ice cube with frozen cherries on a lavender studio backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-01.jpg</image:loc>
+      <image:title>Architectural symmetry</image:title>
+      <image:caption>Editorial AI fashion campaign, architectural symmetry</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-jam-jar-sky-reflection-blue-clouds.jpg</image:loc>
+      <image:title>Preserve jar, sky reflection</image:title>
+      <image:caption>AI product photography, glass jar of fruit preserve reflected on a mirror surface against a blue sky with clouds</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-04.jpg</image:loc>
+      <image:title>Tropical color, beauty story</image:title>
+      <image:caption>Editorial AI fashion campaign, tropical color beauty story</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-steel-watch-grey-rock-product-photo.jpg</image:loc>
+      <image:title>Steel watch, rock formation</image:title>
+      <image:caption>AI luxury watch photography, steel wristwatch wedged between grey rocks</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-05.jpg</image:loc>
+      <image:title>Berry color, beauty story</image:title>
+      <image:caption>Editorial AI fashion campaign, berry color beauty story</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-model-burgundy-suit-skincare-checkerboard-floor.jpg</image:loc>
+      <image:title>Skincare campaign, checkerboard set</image:title>
+      <image:caption>AI beauty campaign, model in a burgundy suit and sunglasses placing skincare bottles on a checkerboard floor</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-06.jpg</image:loc>
+      <image:title>Accessory composite, tinted lens</image:title>
+      <image:caption>Editorial AI fashion campaign, sunglasses composite</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-perfume-bottle-white-snake-black-lava-rock.jpg</image:loc>
+      <image:title>Perfume, white snake concept</image:title>
+      <image:caption>AI perfume photography, glass perfume bottle coiled by a white snake on black volcanic rock</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-07.jpg</image:loc>
+      <image:title>Golden hour, courtyard portrait</image:title>
+      <image:caption>Editorial AI fashion campaign, golden hour courtyard portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-leather-strap-watch-driftwood-ad-poster.jpg</image:loc>
+      <image:title>Watch ad poster, driftwood</image:title>
+      <image:caption>AI watch advertisement, skeleton dial wristwatch with brown leather strap on dark driftwood with headline text</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-08.jpg</image:loc>
+      <image:title>Varsity campaign poster</image:title>
+      <image:caption>Editorial AI fashion campaign, varsity jacket poster</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-white-perfume-bottle-jungle-light-rays.jpg</image:loc>
+      <image:title>Perfume, jungle light rays</image:title>
+      <image:caption>AI perfume photography, white faceted perfume bottle among tropical leaves with light rays</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-09.jpg</image:loc>
+      <image:title>Magazine cover concept</image:title>
+      <image:caption>Editorial AI fashion campaign, magazine cover concept</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-blue-perfume-bottle-moon-gift-box-midnight-blue.jpg</image:loc>
+      <image:title>Fragrance and gift box, midnight blue</image:title>
+      <image:caption>AI fragrance photography, blue perfume bottle beside a moon-embossed gift box on a deep blue backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/editorial-10.jpg</image:loc>
+      <image:title>Urban Icon, faux fur statement</image:title>
+      <image:caption>Editorial AI fashion campaign, faux fur statement coat</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-01.jpg</image:loc>
+      <image:title>Motion-blur runway concept</image:title>
+      <image:caption>Editorial AI fashion campaign, motion-blur runway concept</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-06.jpg</image:loc>
+      <image:title>Leather tailoring duo</image:title>
+      <image:caption>Editorial AI fashion campaign, black leather tailoring duo</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-03.jpg</image:loc>
+      <image:title>Skyline portrait, bold color</image:title>
+      <image:caption>Lifestyle AI fashion campaign, bold color city skyline portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-canned-drink-popsicle-sunglasses-nyc-taxi.jpg</image:loc>
+      <image:title>Street-style drink shot, city taxi</image:title>
+      <image:caption>AI lifestyle product photo, hand holding a sparkling drink can with an orange popsicle and sunglasses in front of a New York taxi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-01.jpg</image:loc>
+      <image:title>Riviera campaign, vintage coupe</image:title>
+      <image:caption>Lifestyle AI fashion campaign, vintage coupe</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-man-holding-black-perfume-bottle-portrait.jpg</image:loc>
+      <image:title>Fragrance portrait, black bottle</image:title>
+      <image:caption>AI fragrance campaign portrait, man holding a black perfume bottle in front of his face</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-03.jpg</image:loc>
+      <image:title>Travel capsule, tailored fit</image:title>
+      <image:caption>Lifestyle AI fashion campaign, travel capsule</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-hand-holding-black-perfume-bottle-leather-chair.jpg</image:loc>
+      <image:title>Fragrance in hand, leather lounge</image:title>
+      <image:caption>AI lifestyle fragrance photo, hand holding a black perfume bottle beside a wristwatch and leather chair</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-02.jpg</image:loc>
+      <image:title>Rooftop terrace duo</image:title>
+      <image:caption>Lifestyle AI fashion campaign, rooftop terrace</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-skincare-jar-seaside-rock-ledge-sunset.jpg</image:loc>
+      <image:title>Skincare jar, seaside sunset</image:title>
+      <image:caption>AI lifestyle product photo, skincare jar on a coastal rock ledge at sunset</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-04.jpg</image:loc>
+      <image:title>Dynamic pose, city energy</image:title>
+      <image:caption>Lifestyle AI fashion campaign, dynamic city portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-05.jpg</image:loc>
+      <image:title>Moody studio, floral accent</image:title>
+      <image:caption>Lifestyle AI fashion campaign, studio portrait with flower</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/lifestyle-06.jpg</image:loc>
+      <image:title>Off-duty knitwear, western boots</image:title>
+      <image:caption>Lifestyle AI fashion campaign, off-duty loungewear</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/streetwear-01.jpg</image:loc>
+      <image:title>Match-day capsule, city street</image:title>
+      <image:caption>Lifestyle AI fashion campaign, match-day capsule on a Paris street</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/streetwear-02.jpg</image:loc>
+      <image:title>Retro jersey, courtyard light</image:title>
+      <image:caption>Lifestyle AI fashion campaign, retro jersey in courtyard light</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-02.jpg</image:loc>
+      <image:title>Studio print, graphic maxi</image:title>
+      <image:caption>Studio AI fashion campaign, graphic print maxi dress</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-floating-serum-bottles-water-droplets-lilac-gradient.jpg</image:loc>
+      <image:title>Floating bottles, water droplets</image:title>
+      <image:caption>AI product photoshoot, lilac serum bottles floating with water droplets on a pink and purple gradient</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-04.jpg</image:loc>
+      <image:title>Tailored blazer, red lip</image:title>
+      <image:caption>Studio AI fashion campaign, tailored burgundy blazer with red lip</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-chips-bag-on-potato-chips-bed.jpg</image:loc>
+      <image:title>Snack pack, chip texture</image:title>
+      <image:caption>AI product photography, orange and blue chips bag resting on a bed of potato chips</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-05.jpg</image:loc>
+      <image:title>Pinstripe tailoring, studio</image:title>
+      <image:caption>Studio AI fashion campaign, pinstripe suit tailoring</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-stacked-striped-cans-orange-backdrop.jpg</image:loc>
+      <image:title>Stacked cans, orange studio</image:title>
+      <image:caption>AI product photoshoot, striped drink cans and a glass stacked mid-air on an orange backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/high-fashion-07.jpg</image:loc>
+      <image:title>Ruffled blouse, statement belt</image:title>
+      <image:caption>Studio AI fashion campaign, ruffled blouse portrait with statement belt</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-drink-can-crushed-ice-ad-poster.jpg</image:loc>
+      <image:title>Drink can on ice, ad poster</image:title>
+      <image:caption>AI beverage ad design, drink can on crushed ice with headline text</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-lemon-soda-can-fresh-lemons.jpg</image:loc>
+      <image:title>Lemon soda, fruit surround</image:title>
+      <image:caption>AI product photography, yellow lemon soda can surrounded by fresh lemons</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-smartwatch-orange-band-rock-pedestal-gold-backdrop.jpg</image:loc>
+      <image:title>Smartwatch, rock pedestal</image:title>
+      <image:caption>AI product photography, smartwatch with an orange band floating between brown rocks on a gold backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-orange-high-top-sneaker-hanging-laces-dark-backdrop.jpg</image:loc>
+      <image:title>Hanging sneaker, dark studio</image:title>
+      <image:caption>AI sneaker product photography, orange and white high-top sneaker hanging by its laces against a dark backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-cookie-box-levitating-chocolate-chip-cookie.jpg</image:loc>
+      <image:title>Cookie box, levitating cookie</image:title>
+      <image:caption>AI food packaging photography, cookie box with a levitating chocolate chip cookie on a beige backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-syrup-bottle-ice-cream-caramel-drizzle.jpg</image:loc>
+      <image:title>Syrup bottle, ice cream concept</image:title>
+      <image:caption>AI food and beverage photography, syrup bottle balanced on ice cream with caramel drizzle</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/studio-sparkling-soda-can-kiwi-lemon-slices.jpg</image:loc>
+      <image:title>Sparkling can, citrus bed</image:title>
+      <image:caption>AI product photography, orange sparkling soda can on a bed of kiwi and lemon slices</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-01.jpg</image:loc>
+      <image:title>Gallery editorial, natural light</image:title>
+      <image:caption>Minimalist AI fashion campaign, natural light</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-soda-can-purple-puddle-mint-green-backdrop.jpg</image:loc>
+      <image:title>Soda can, pastel puddle</image:title>
+      <image:caption>Minimalist AI product photo, sparkling soda can with a purple liquid puddle on a mint green backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-02.jpg</image:loc>
+      <image:title>Soft pastel, palm shadow</image:title>
+      <image:caption>Minimalist AI fashion campaign, soft pastel set</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-skincare-pump-bottle-paper-leaves-mint-backdrop.jpg</image:loc>
+      <image:title>Skincare bottle, paper leaves</image:title>
+      <image:caption>Minimalist AI skincare product photo, pump bottle with paper leaves on a mint green backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-03.jpg</image:loc>
+      <image:title>Sunlit linen, natural tone</image:title>
+      <image:caption>Minimalist AI fashion campaign, sunlit linen portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-serum-bottle-red-grapes-pink-backdrop.jpg</image:loc>
+      <image:title>Serum bottle, red grapes</image:title>
+      <image:caption>Minimalist AI beauty product photo, serum pump bottle beside red grapes on a soft pink backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-04.jpg</image:loc>
+      <image:title>Cream knitwear, studio seat</image:title>
+      <image:caption>Minimalist AI fashion campaign, cream knitwear portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-pineapple-soda-can-pink-flat-lay.jpg</image:loc>
+      <image:title>Soda can, pineapple flat-lay</image:title>
+      <image:caption>Minimalist AI flat-lay product photo, soda can with pineapple pieces on a soft pink backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/minimalist-perfume-bottle-white-silk-fabric.jpg</image:loc>
+      <image:title>Perfume on white silk</image:title>
+      <image:caption>Minimalist AI product photo, perfume bottle resting on white satin fabric</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-1.jpg</image:loc>
+      <image:caption>AI-generated fashion campaign, architectural rooftop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-woman-winking-holding-skincare-bottle-blue-backdrop.jpg</image:loc>
+      <image:caption>AI product photo, smiling woman holding a skincare bottle above her head on a blue backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-woman-pink-headscarf-holding-toner-bottle-pink-backdrop.jpg</image:loc>
+      <image:caption>AI beauty product photo, woman in a pink headscarf holding a toner bottle against a pink backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-2.jpg</image:loc>
+      <image:caption>AI-generated fashion campaign, city skyline portrait</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-granola-bars-wooden-board-nuts-dark-flat-lay.jpg</image:loc>
+      <image:caption>AI food photography, granola bars on a wooden board with almonds and cacao in a dark flat-lay</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-gold-steel-luxury-watch-driftwood-peach-backdrop.jpg</image:loc>
+      <image:caption>AI luxury watch photography, gold and steel wristwatch resting on driftwood against a peach backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-3.jpg</image:loc>
+      <image:caption>AI-generated fashion campaign, studio blue tone</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-woman-applying-face-serum-dropper-palm-leaves.jpg</image:loc>
+      <image:caption>AI skincare campaign, woman applying face serum with a dropper among palm leaves</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-perfume-bottle-wrapped-rope-warm-beige-light.jpg</image:loc>
+      <image:caption>AI perfume photography, glass perfume bottle wrapped in rope in warm beige light</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-4.jpg</image:loc>
+      <image:caption>AI-generated fashion campaign, travel lifestyle</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-woman-red-fleece-jacket-holding-red-soda-can.jpg</image:loc>
+      <image:caption>AI lifestyle product photo, woman in a red fleece jacket holding a red soda can on a crimson backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-perfume-bottle-charred-wood-spices-maroon-backdrop.jpg</image:loc>
+      <image:caption>AI perfume photography, amber fragrance bottle with charred wood and spices on a maroon backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-5.jpg</image:loc>
+      <image:caption>AI-generated beauty campaign, bold color styling</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-purple-perfume-bottle-weathered-driftwood-moody-light.jpg</image:loc>
+      <image:caption>AI perfume photography, purple perfume bottle on weathered driftwood in moody light</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-green-perfume-bottle-mossy-rocks-stream.jpg</image:loc>
+      <image:caption>AI perfume photography, green perfume bottle on mossy rocks beside a stream</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-6.jpg</image:loc>
+      <image:caption>AI-generated fashion campaign, leather tailoring</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-protein-bar-chocolate-drizzle-peanuts-tan-backdrop.jpg</image:loc>
+      <image:caption>AI food photography, protein bar with chocolate drizzle over peanuts on a tan backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-wireless-headphones-blue-orange-rim-light.jpg</image:loc>
+      <image:caption>AI electronics product photography, wireless headphones with blue and orange rim light</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-7.jpg</image:loc>
+      <image:caption>AI-generated fashion campaign, off-duty studio</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-rugged-bluetooth-speaker-rock-grey-backdrop.jpg</image:loc>
+      <image:caption>AI product photography, rugged Bluetooth speaker on a rock against a grey backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-green-smartphone-floating-stones-driftwood-dark-backdrop.jpg</image:loc>
+      <image:caption>AI tech product photography, green smartphone floating among stones and driftwood on a dark backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-potato-chips-pouring-from-bag-into-bowl-orange.jpg</image:loc>
+      <image:caption>AI food photography, potato chips pouring from a bag into a white bowl on an orange backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-gaming-mice-concrete-surface-black-white.jpg</image:loc>
+      <image:caption>AI tech product photography, black and white gaming mice on a concrete surface</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-stacked-cinnamon-rolls-levitating-glaze-warm-backdrop.jpg</image:loc>
+      <image:caption>AI food photography, stacked cinnamon rolls levitating with glaze on a warm backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-matcha-cake-slice-gold-fork-green-backdrop.jpg</image:loc>
+      <image:caption>AI food photography, matcha cake slice on a gold fork against a green backdrop</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://warpframe-ecommerce-photoshoot.netlify.app/assets/images/hero-snack-pouches-flat-lay-diagonal-colour-stripes.jpg</image:loc>
+      <image:caption>AI packaging photography, snack pouches in a diagonal flat-lay on colour-blocked stripes</image:caption>
+    </image:image>
   </url>
 </urlset>

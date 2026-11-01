@@ -286,6 +286,8 @@ body {
   opacity: 0;
 }
 .hero-slide.is-active { opacity: 1; }
+/* Non-active slides stay display:none until script.js reveals them, so lazy images load on demand */
+.hero-slide:not(.is-active) { display: none; }
 .hero-slide img { width: 100%; height: 100%; object-fit: cover; object-position: top center; transform: scale(1.05); opacity: 0.9; }
 
 .hero-scrim {
@@ -425,8 +427,9 @@ body {
 .benefit-card h3 { margin-top: 22px; font-family: var(--font-display); font-size: 19px; font-weight: 500; }
 .benefit-card p { margin-top: 8px; font-size: 14.5px; line-height: 1.6; color: var(--ivory-dim); }
 
+@media (min-width: 861px) { .card-grid-2 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 860px) { .card-grid { grid-template-columns: repeat(2, 1fr); } }
-@media (max-width: 560px) { .card-grid { grid-template-columns: 1fr; } }
+@media (max-width: 560px) { .card-grid, .card-grid-2 { grid-template-columns: 1fr; } }
 
 /* ============================================================
    CTA band

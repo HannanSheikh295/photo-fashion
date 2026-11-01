@@ -75,6 +75,9 @@
 
       gsap.set(slides, { opacity: 0 });
       gsap.set(slides[0], { opacity: 1 });
+      // Slides after the first are display:none in CSS so their (lazy) images don't
+      // all download at once. Reveal each one two steps ahead of when it fades in.
+      gsap.set(slides[1], { display: "block" });
 
       const hold = 4.5;
       const fade = 1.4;
@@ -82,7 +85,9 @@
 
       slides.forEach((slide, i) => {
         const next = slides[(i + 1) % slides.length];
-        tl.to({}, { duration: hold })
+        const after = slides[(i + 2) % slides.length];
+        tl.set(after, { display: "block" })
+          .to({}, { duration: hold })
           .to(slide, { opacity: 0, duration: fade, ease: "power1.inOut" }, ">")
           .to(next, { opacity: 1, duration: fade, ease: "power1.inOut" }, "<");
       });
